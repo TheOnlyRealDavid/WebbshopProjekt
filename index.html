@@ -8,7 +8,8 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <div id="Loga">
+
+    <div id="loga">
         <img src="./img/DinosaurWebbShopLogo.jpg" alt="Loga">
     </div>
 
@@ -22,31 +23,34 @@
 
     <main>
         <div class="DinosaurPack">
-            <img src="./img/DInosaurToys1.jpg" alt="DinosaurPacket">
+            <img src="./img/DinosaurPack.jpg" alt="DinosaurPacket">
             <p>Pris: 125kr</p>
             <p>DinosaurPacket</p>
-            <!-- Senare ska jag lägga till en button här -->
+            <button type="button" onclick="addToCart('DinosaurPACK - 125kr')">Lägg Till</button>
         </div>
 
         <div class="Rex">
-            <img src="./img/DinosaurToy2.jpg" alt="Rex">
+            <img src="./img/TyranosaurusRex.jpg" alt="Rex">
             <p>Pris: 50kr</p>
             <p>Tyranosaurusrex</p>
-            <!-- Senare ska jag lägga till en button här -->
+            <button type="button" onclick="addToCart('Rex - 50kr')">Lägg Till</button>
         </div>
 
         <div>
             <img src="./img/Triceratopstoy1.jpg" alt="Triceratops">
             <p>Pris: 50kr</p>
             <p>Triceratops</p>
-            <!-- Senare ska jag lägga till en button här -->
+            <button type="button" onclick="addToCart('Triceratops - 50kr')">Lägg Till</button>
         </div>
 
     </main>
 
     <aside>
-        <p>Kundvagn</p>
-        <!-- en lista som visar vad du har lagt till i kungvagen om jag hinner -->
+        <h2>Kundvagn</h2>
+
+        <ul id="cartList">
+            <!-- Produkter hamnar här -->
+        </ul>
     </aside>
 
     <footer>
