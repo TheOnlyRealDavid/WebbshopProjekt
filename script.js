@@ -1,6 +1,6 @@
 function addToCart(productName) {
 
-    let cart = document.getElementById("cartList");
+    let cart = document.getElementById("KundvagnLista");
 
     let newItem = document.createElement("li");
 
